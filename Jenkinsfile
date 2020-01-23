@@ -12,7 +12,7 @@ pipeline {
     }
 
 stage('DeployToStaging') {
-    if {
+    when {
         branch 'master'
     }
     steps {
